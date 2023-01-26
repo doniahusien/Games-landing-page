@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="./images/logo.png" alt="">
+            <a href="#" class="d">
+                <img src="./images/toogle-icon.png" alt="" id="toogle">
+            </a>
+            
+        </div>
+        <div class="down hide ">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#game">Game</a>
+                </li>
+                <li>
+                    <a href="#client">Client</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact us</a>
+                </li>
+                <li>
+                    <input type="search" placeholder="Search">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div>
+            
+            <img src="./images/icon-1.png" alt="">
+        <h1> All Games Here</h1>
+        <p>established fact tha a reader will distracted by the readable content of a page when looking at its layout</p>
+        </div>
+        <section>
+            <div class="games frst">
+                <img src="./images/img-2.png" alt="">
+                <span>
+                    <h3>01</h3>
+                    <h2>Game</h2>
+                    <h5>there are many vartiations of passages of lorem ipsum avaliable,but the</h5>
+                    <button class="active">Play Now</button>
+                </span>
+                
+            </div>
+            <div class="games second">
+                <img src="./images/img-3.png" alt="">
+                <span>
+                    <h3>02</h3>
+                <h2>Game</h2>
+                <h5>there are many vartiations of passages of lorem ipsum avaliable,but the</h5>
+                <button>Play Now</button>
+            </span>
+            </div>
+            <div class="games thrd">
+                <img src="./images/img-4.png" alt="">
+                <span>
+                    <h3>03</h3>
+                <h2>Game</h2>
+                <h5>there are many vartiations of passages of lorem ipsum avaliable,but the</h5>
+                <button>Play Now</button>
+            </span>
+            </div>
+            <div class="games fourth">
+                <img src="./images/img-5.png" alt="">
+                <span>
+                    <h3>04</h3>
+                <h2>Game</h2>
+                <h5>there are many vartiations of passages of lorem ipsum avaliable,but the</h5>
+                <button>Play Now</button>
+            </span>
+            </div>
+        </section>
+    </header>
+    <article>
+        <div>
+            <img src="./images/icon-1.png" alt="">
+        <h1> How to Play Casino</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dolor nobis delectus eaque? Deserunt nisi eos aspernatur harum et consequuntur est, rem unde perferendis veniam quisquam laborum molestias officia ipsum?</p>
+        </div>
+        <section>
+            <div>
+                <img src="./images/double-img.png" alt="">
+                <h4>Register Info</h4>
+            </div>
+            <div>
+                <img src="./images/poker-img.png" alt="">
+                <h4>Deposit Your Money</h4>
+            </div>
+            <div>
+                <img src="./images/jigsaw-img.png" alt="">
+                <h4>14 days Free</h4>
+            </div>
+            <div>
+                <img src="./images/coins-img.png "alt="">
+                <h4>Play online</h4>
+            </div>
+        </section>
+        <button>Play Now</button>
+    </article>
+    <footer>
+        <div>
+            <input type="email" name="" id=""placeholder="Enter your Email">
+            <span>subscribe</span>
+        </div>
+        <div>
+            <img src="./images/fb-icon.png" alt="">
+            <img src="./images/twitter-icon.png" alt="">
+            <img src="./images/linkedin-icon.png" alt="">
+            <img src="./images/instagram-icon.png" alt="">
+        </div>
+        <section>
+            <div>
+                <img src="./images/mail-icon.png" alt="">
+                <p>demo@gmail.com</p>
+            </div>
+            <div>
+                <img src="./images/call-icon.png" alt="">
+                <p>+56444457456</p>
+            </div>
+            <div>
+                <img src="./images/map-icon.png" alt="">
+                <p>location</p>
+            </div>
+        </section>
+        <hr>
+        <h5>copyright 201p All Right Reserved By Free Html Templates</h5>
+    </footer>
+    <script>
+        const togle= document.querySelector(".d");
+        const down= document.querySelector(".down");
+        togle.onclick=(()=>{ 
+            down.classList.toggle("hide");
+        })
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav{
+    padding: 14px 14px 2px 14px;
+    background: url("./images/banner-bg.png"),rgba(85, 85, 85, 0.244) no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+}
+nav>div{
+   display: grid;
+   padding-bottom: 10px;
+   grid-template-columns: 95% 2%;
+}
+#toogle{
+    width: 50px;  
+}
+nav ul {
+    padding-top: 9px;
+}
+nav div ul li{
+   padding: 7px;
+}
+nav div ul li input{
+    background-color: transparent;
+    border: 0px;
+    width: 170px;
+    padding-bottom: 2px;
+    border-bottom: 1px white solid;
+    outline: none;
+}
+nav div input::placeholder{
+    font-size: 17px;
+}
+.hide{
+   display: none;
+}
+header,article{
+    margin-top: 70px;
+    text-align:center;
+} 
+header>div>h1,article>div>h1{
+    display: inline-block;
+    text-transform: uppercase;
+}
+header>div img, article>div img{
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align:middle;
+}
+header>div>p {
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+header section{
+    display: flex;
+    color: aliceblue;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+header section div{
+    position: relative;
+    text-align: center;
+}
+header section div img{
+    width:80%;    
+} 
+header section div span/*,h2,p*/{
+    position: absolute;
+    height: 250px; 
+    transform: translate(-50%, -50%);
+}
+header section div h3{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: red 1px solid;
+    color: aliceblue;
+    background-color: black;
+}
+ header section div h2{
+    padding-bottom: 10px;
+}
+header section h5{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 200px;
+    height: 35px;
+}
+header section div button{
+   color: aliceblue;
+   margin-top: 50px;
+   height: 40px;
+   width: 120px;
+   border-radius: 70px;
+   border: 1px solid red;
+   background-color:#000000;
+}
+.active, button:hover{
+   background-color:#bf3d42;
+   transition-delay: 20ms;
+   cursor: pointer;
+}
+header section div.frst span{
+    transform: translate(-50%, -50%);
+    top: 93%;
+    left: 50%;
+}
+header section div.second span{
+    top: 80%;
+    left: 50%;
+}
+header section div.thrd span{
+    top: 65%;
+    left: 50%;
+}
+header section div.frst img{
+    height: 420px;
+    width: 200px;
+}
+header section div.second img{
+    height:370px;
+    margin: 0px 30px;
+    width: 200px;
+}
+header section div.thrd img{
+    width:200px;
+    height:300px;
+}
+section div.fourth span{
+    top: 50%;
+    left: 50%;
+}
+header section div.fourth img{
+    width: 200px;
+    margin: 0px 30px;
+    height:230px;
+}
+article{
+    padding: 80px 0px;
+    margin: 150px 0px;
+    color: aliceblue;
+    background-color: #000000;
+}
+article>div{
+    margin: auto;
+}
+article h1{
+    text-transform: uppercase;
+    font-size:30px;
+}
+article p{
+    width: 70%;
+    padding: 20px 0px 40px;
+    margin: auto;
+}
+article section{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: center;
+    gap: 20px;
+}
+article section div img{
+    width: 20%;
+    border-radius: 10px;
+    padding: 50px 85px;
+border: 2px white solid;
+}
+article div h4{
+    padding: 10px;
+}
+article button{
+    height: 40px;
+    margin-top: 20px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid #bf3d42;
+    border-radius: 50px;
+    width: 130px;
+}
+footer{
+    background-color: #1c1c1c;
+    color: gray;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+footer div,section{
+    margin: auto;
+    padding: 10px 0px;
+}
+footer div span{
+    margin-left: -70px;
+}
+footer div input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 470px;
+    padding: 8px;
+    background-color: transparent;
+}
+footer section{
+    display: flex;
+    font-size: 14px;
+    gap: 100px;
+    
+}
+footer section div img{
+    width: 15%;
+    margin-right:8px;
+}
+footer section div{
+    display: flex;
+}
+hr{
+    color: gray;
+    border-color: gray;
+    width: 150px;
+    margin: 30px auto;
+}
+h5{
+    margin: auto;
+}
+@media only screen and (min-width:375px) and (max-width:400px) {
+    article section{
+        display: flex;
+        flex-direction: column;
+    }
+    footer div input{
+        width: 290px;
+    }
+    footer section{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    footer{
+        text-align: center;
+    }
+    header section{
+       gap: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    header section div.second span{
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 50%;
+    }
+    header section div.thrd span{
+        transform: translate(-50%, -50%);
+        top: 90%;
+        left: 50%;
+    }
+    header section div.fourth span{
+        transform: translate(-50%, -50%);
+        top: 95%;
+        left: 50%;
+    }
+    nav>div{
+        display: grid;
+        padding-bottom: 10px;
+        grid-template-columns: 80% 2%;
+     }
+  
+
+}
